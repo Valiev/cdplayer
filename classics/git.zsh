@@ -1,4 +1,8 @@
-function is_git_context (){
+CD_TITLE="git"
+
+add_to_collection $CD_TITLE
+
+function  (){
 # FIXME
   command git rev-parse --is-inside-work-tree 2> /dev/null == "1"
 }
